@@ -1,6 +1,3 @@
-4 + 10
-14
+console.log(4 + 10)
 
-console.log("Laurence");
-Laurence
-undefined
+console.log("AscendantAlf");

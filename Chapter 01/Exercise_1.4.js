@@ -1,7 +1,14 @@
-let a = 10; // assign a value of 10 to variable a
-console.log(a); // This will output 10 into the console
-/*
-This is a multi-line 
-Comment
-*/
+const a = 10;
+const b = 20;
 
+console.log(a * b);
+//this console log is printing the result of multiplying a and b
+
+//this is a single line comment
+
+/* this
+is
+a
+multi
+line
+comment */
