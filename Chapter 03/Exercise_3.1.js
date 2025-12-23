@@ -1,4 +1,4 @@
-const myList = ["Milk", "Bread", "Apples"];
-console.log(myList.length);
-myList[1] = "Bananas";
+const array = ["Milk", "Bread", "Apples"];
+console.log(array.length);
+array[1] = "Bananas";
 console.log(myList);
