@@ -1,11 +1,18 @@
-let age = prompt("How old are you?");
-age = Number(age);
+let age = prompt("What is your age?");
+Number(age);
 let message;
-if(age >= 21){
-    message = "You can enter and drink.";
-}else if(age >= 19){
-    message = "You can enter but not drink.";
-}else{
-    message = "You are not allowed in!";
+
+if (age >= 21) {
+    message = "You are allowed into the venue and can buy alcohol"
 }
+    else if (age > 19) {
+    message = "You are allowed in, but can't buy alcohol"
+}
+    else {
+    message = "You are not allowed in"
+};
+
 console.log(message);
+
+/* really simple. exercise was to use if and
+else if */

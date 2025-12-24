@@ -1,21 +1,35 @@
-const randomNumber = Math.floor(Math.random() * 6);
-let answer = "Something went wrong";
-let question = prompt("Ask me anything");
+const randomNumber = Math.floor(Math.random() * 6)
+
+let userQuestion = String(prompt("Ask me a question"));
+let answer;
+
 switch (randomNumber) {
     case 0:
-        answer = "It will work out";
+        answer = "It is certain";
         break;
     case 1:
-        answer = "Maybe, maybe not";
-        break;
+        answer = "I better not tell you now...";
+    break;
     case 2:
-        answer = "Probably not";
-        break;
+        answer = "8 ball cloudy... ask again";
+    break;
     case 3:
-        answer = "Highly likely";
-        break;
+        answer = "Very likely";
+    break;
+    case 4:
+        answer = "Don't count on it";
+    break;
+    case 5:
+        answer = "Let it happen";
+    break;
     default:
-        answer = "I don't know about that";
+        break;
 }
-let output = "You asked me " + question + ". I think that " + answer;
+
+let output = `You asked me "${userQuestion}" and 8 ball thinks "${answer}"`;
 console.log(output);
+
+/*pretty simple. exercise was to simulate a
+magic 8 ball by grabbing a user question and
+using a switch statement to simulate it mulling
+over a response*/

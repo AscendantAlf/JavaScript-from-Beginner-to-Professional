@@ -1,22 +1,26 @@
-let prize = prompt("Pick a number 0-10");
-prize = Number(prize);
-let output = "My Selection: ";
-switch (prize){
-    case 0: 
-        output += "Gold ";
+let prize = prompt("Select a numeric value from 0 to 10");
+let Prize = Number(prize);
+let output = "My Selection:"
+
+switch (Prize) {
+    case 0:
     case 1:
-        output += "Coin ";
-        break;
     case 2:
-        output += "Big ";
-    case 3:
-        output += "Box of ";
-    case 4:
-        output += "Silver ";
-    case 5:
-        output += "Bricks ";
+       userPrize = `Cotton Candy`; 
         break;
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+        userPrize = `Giant Stuffed Animal`;
     default:
-        output += "Sorry Try Again";
+        userPrize = `Park-Themed Beverage Container`;
+        break;
 }
-console.log(output);
+
+AwardMessage = output.concat(` ${userPrize}`);
+console.log(AwardMessage);
+
+/* fairly simple. Had to use a switch statement where
+multiple cases had the same output. This was to
+simulate a user getting a prize from their input. */

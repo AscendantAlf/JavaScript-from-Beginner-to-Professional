@@ -1,3 +1,5 @@
-const id = true;
-const message = (id) ? "Allowed In" : "Denied Entry";
-console.log(message);
+const id = false;
+
+id === false ? console.log("Denied") : console.log("Allowed");
+
+//really simple. exercise required using ternary (?) operator
