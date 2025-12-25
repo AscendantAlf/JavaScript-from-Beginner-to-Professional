@@ -1,9 +1,14 @@
 const myWork = [];
-for (let x = 1; x < 10; x++) {
-    let stat = x % 2 ? true : false;
-    let temp = {
-        name: `Lesson ${x}`, status: stat
+
+for (let i = 1; i <= 10; i++) {
+    let status = i % 2 ? true: false;
+    let lessonclass = {
+        name: `Lesson ${i}`, Returning: status
     };
-    myWork.push(temp);
+    myWork.push(lessonclass);
 }
+
 console.log(myWork);
+
+/* exercise was to use a for loop to push
+objects into an empty array */
