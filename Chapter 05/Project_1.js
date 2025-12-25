@@ -1,11 +1,19 @@
-const myTable = [];
-const numm = 10;
-for(let x=0; x<numm; x++){
-    const temp = [];
-    for(let y = 0; y<numm; y++){
-        temp.push(x*y);
+const multTable = [];
+
+let value = prompt("What is the maximum number you want the multiplication table to have multiply by itself")
+value = Number(value);
+
+for (let i = 1; i <= value; i ++) {
+    tempTable = [];
+    for (let j = 1; j <= value; j++) {
+    tempTable.push(i * j);   
     }
-    myTable.push(temp);
+    multTable.push(tempTable);
 }
- 
-console.table(myTable); 
+
+console.table(multTable);
+
+/*this project was to create a multiplication table
+once again, I think console.log would look better
+(table was instruction) since Index header is bound
+to confuse some people */

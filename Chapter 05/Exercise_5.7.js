@@ -1,16 +1,18 @@
-const obj = {
-    a: 1,
-    b: 2,
-    c: 3
-};
-for (let prop in obj) {
-    console.log(prop, obj[prop]);
+const texasStore = {
+    location: "Texas",
+    revenue: 720000,
+    customerCount: 1000,
 }
-const arr = ["a", "b", "c"];
-for (let w = 0; w < arr.length; w++) {
-    console.log(w, arr[w]);
+
+for (let prop in texasStore) {
+    console.log(prop);
+    console.log(texasStore[prop]);
 }
- 
-for (el in arr) {
-    console.log(el, arr[el]);
-} 
+
+const texasStoreArray = ["location", "revenue", "customerCount" ]
+
+for (let properties in texasStoreArray) {
+    console.log(properties, texasStoreArray[properties]);
+}
+
+/* Exercise is to practice using for in loops */
