@@ -1,18 +1,21 @@
-let start = 10; 
-function loop1(val) { 
-    console.log(val); 
-    if (val < 1) { 
-        return; 
-    } 
-    return loop1(val - 1); 
-} 
-loop1(start); 
-function loop2(val) { 
-    console.log(val); 
-    if (val > 0) { 
-        val--; 
-        return loop2(val); 
-    } 
-    return; 
-} 
-loop2(start);
+let start = 10;
+
+function firstCountdown(value) {
+    console.log(value);
+    if (value < 1) {
+        return;
+        }
+    firstCountdown(value - 1);
+    }
+
+firstCountdown(start);
+
+function secondCountdown (value) {
+    if (value > 0) {
+    value--;
+    return secondCountdown(value);
+}
+    return;
+}
+
+secondCountdown(start);

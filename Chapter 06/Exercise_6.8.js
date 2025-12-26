@@ -1,9 +1,14 @@
-const test = function(val){
-    console.log(val);
+const storedFunction = function (value) {
+    console.log(value);
 }
-test('hello 1');
- 
-function test1(val){
-    console.log(val);
+
+storedFunction(10);
+
+function functionDefinition (value) {
+    console.log(value);
 }
-test1("hello 2");
+
+functionDefinition(10);
+
+// this exercise was about practicing storing functions to variables
+//in contrast with the standard function definition syntax
