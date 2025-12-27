@@ -1,18 +1,26 @@
 class Employee {
-    constructor(first, last, years) {
-        this.first = first;
-        this.last = last;
-        this.years = years;
+    constructor (firstName, lastname, tenure) {
+        this.firstName = firstName;
+        this.lastname = lastname;
+        this.tenure = tenure;
     }
 }
-const person1 = new Employee("Laurence", "Svekis", 10);
-const person2 = new Employee("Jane", "Doe", 5);
-const workers = [person1, person2];
 
-Employee.prototype.details = function(){
-    return this.first + " " + this.last + " has worked here " + this.years + " years";
-}
+let Thomas = new Employee ("Thomas", "Doe", 5);
+let Mike = new Employee ("Mike", "Stroganoff", 12);
 
-workers.forEach((person) => {
-    console.log(person.details());
+newArray = [Thomas, Mike];
+
+Employee.prototype.detail = function () {
+    return this.firstName + " " + this.lastname + " has been with the company for" + " " + this.tenure + " years";
+};
+
+newArray.forEach((Employee) => {
+    console.log(Employee.detail());
 });
+
+/* mostly simple. had to macke an "employee tracking" script that
+would log how long each person has been with the company. the
+instructions were to use prototype to create a function that
+returned all of that info and then iterate over an array of two
+employees with it */

@@ -1,21 +1,31 @@
 class Menu {
-    #offer1 = 10;
-    #offer2 = 20;
-    constructor(val1, val2) {
-        this.val1 = val1;
-        this.val2 = val2;
+    #price1 = 6;
+    #price2 = 4;
+    constructor(quantity1, quantity2) {
+        this.quantity1 = quantity1;
+        this.quantity2 = quantity2;
     }
-    calTotal(){
-        return (this.val1 * this.#offer1) + (this.val2 * this.#offer2);
+    totalcost () {
+        return (this.quantity1 * this.#price1) + (this.quantity2 * this.#price2);
     }
-    get total(){
-        return this.calTotal();
-    }
+    
+    get total() {
+        return this.totalcost();
+    };
 }
- 
-const val1 = new Menu(2,0);
-const val2 = new Menu(1,3);
-const val3 = new Menu(3,2);
-console.log(val1.total);
-console.log(val2.total);
-console.log(val3.total);
+
+
+let Tom = new Menu (5, 7);
+let Jerry = new Menu (10, 12);
+let Frank = new Menu (7, 31);
+
+
+console.log(Tom, Tom.totalcost());
+console.log(Jerry, Jerry.totalcost());
+console.log(Frank, Frank.totalcost());
+
+/* mostly straightforward. I had to make a class that not only took two inputs
+into the constructor, but that was also be able to use those in inputs in 
+calculations ("menu items price calculator"). to do that, I made two private (instructions)
+"field"/"property" declarations and made a function to get the total cost. I had to use
+get (getter) to be able to grab private values. */
