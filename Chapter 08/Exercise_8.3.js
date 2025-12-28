@@ -1,8 +1,10 @@
-const myArr = [1,4,5,6];
-const myArr1 = myArr.map(function(ele){
-    return ele * 2;
-});
-console.log(myArr1);
+const myArray = [7, 10, 12, 13, 14, 19, 20];
 
-const myArr2 = myArr.map((ele)=> ele*2);
-console.log(myArr2);
+const newArray = myArray.map(function(x) {
+    return x * 2
+});
+
+const newArray2 = myArray.map((x) => x * 2);
+console.log(newArray2);
+
+/*Exercise was to practice with .map() method */

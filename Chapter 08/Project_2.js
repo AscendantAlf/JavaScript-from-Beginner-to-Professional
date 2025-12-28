@@ -1,4 +1,4 @@
-const endDate = "Sept 1 2022";
+const endDate = "April 20 2027";
 
 function countdown() {
     const total = Date.parse(endDate) - new Date();
@@ -25,3 +25,5 @@ function update() {
 }
 
 update();
+
+/* countdown timer */

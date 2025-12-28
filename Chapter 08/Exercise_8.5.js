@@ -1,8 +1,16 @@
-let val = "I love JavaScript";
-val = val.toLowerCase();
-let vowels = ["a","e","i","o","u"];
-vowels.forEach((letter,index) =>{
+let string = "I love Javascript"
+
+let lowcasestring = string.toLowerCase();
+
+let vowelArray = ["a", "e", "i", "o", "u"];
+
+vowelArray.forEach((letter, index) => {
     console.log(letter);
-    val = val.replaceAll(letter,index);
+    string = string.replaceAll(letter,index);
 });
-console.log(val);
+
+console.log(string);
+
+/* exercise was to use replaceAll method to replace
+the vowels in a given string to numbers (in this case,
+their indices work) */

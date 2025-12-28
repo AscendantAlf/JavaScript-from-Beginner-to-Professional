@@ -1,16 +1,19 @@
-let str = "JavaScript";
-        
-function scramble(val) {
-    let max = val.length;
-    let temp = "";
-    for(let i=0;i<max;i++){
-        console.log(val.length);
-        let index = Math.floor(Math.random() * val.length);
-        temp += val[index]; 
-        console.log(temp); 
-        val = val.substr(0, index) + val.substr(index + 1);
-        console.log(val);
+let myString = "Ascendant";
+
+function wordScramble (value){
+    let wordLength = value.length;
+    let scrambledString = "";
+    for (let i = 0; i < wordLength; i ++) {
+        console.log(value.length);
+        let index = Math.floor(Math.random() * value.length);
+        scrambledString += value[index];
+        console.log(scrambledString);
+        value = value.substr(0, index) + value.substr(index + 1);
+        console.log(value);
     }
-    return temp;
+    return scrambledString;
 }
-console.log(scramble(str));
+
+console.log(wordScramble(myString));
+
+/* Project was to make a word scrambler */

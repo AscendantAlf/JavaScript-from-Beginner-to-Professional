@@ -1,3 +1,4 @@
+console.log(Math.PI);
 console.log(Math.ceil(5.7));
 console.log(Math.floor(5.7));
 console.log(Math.round(5.7));
@@ -11,3 +12,9 @@ function ranNum(min, max) {
 for (let x = 0; x < 100; x++) {
     console.log(ranNum(1, 100));
 }
+
+/* this exercise was just to use the Math methods, which
+are extraordinarily self-explanatory, so I didn't feel the need
+to edit or delete the template. I did add the 1st line to print
+the value of pi, since it was instruction 1, but not on the template.
+yes the instructions were to let that function run 100 times */
