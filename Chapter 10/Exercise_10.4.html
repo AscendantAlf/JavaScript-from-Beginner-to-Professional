@@ -1,15 +1,18 @@
 <!doctype html>
 <html>
 <head>
-    <title>Canvas HTML5</title>
+    <title>Get Elements by Class Exercise</title>
 </head>
 <body>
     <body>
-        <h1 class="ele">Hello World</h1>
-        <div class="ele">Hello World 1</div>
-        <div class="ele">Hello World 3</div>
+        <h1 class="one">Hello World</h1>
+        <div class="numbered">Hello World 1</div>
+        <div class="numbered">Hello World 3</div>
     <script>
-        const myEles = document.getElementsByClassName("ele");
+        const myEles = document.getElementsByClassName("numbered");
         console.log(myEles[0]);
     </script>
 </html>
+
+<!-- really simple. get elements by class name. Makes an array of results returned.
+ could return the entire array by getting rid of [0] in console log -->

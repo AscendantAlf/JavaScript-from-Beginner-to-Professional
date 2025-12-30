@@ -1,18 +1,18 @@
 <!doctype html>
 <html>
 <head>
-    <title>JS Tester</title>
+    <title>.querySelectorAll() Exercise</title>
 </head>
 <body>
     <div class="container">
         <div class="myEle">One</div>
-        <div class="myEle">Two</div>
+        <div class="selectme">Two</div>
         <div class="myEle">Three</div>
-        <div class="myEle">Four</div>
-        <div class="myEle">Five</div>
+        <div class="selectme">Four</div>
+        <div class="selectme">Five</div>
     </div>
     <script>
-        const eles = document.querySelectorAll(".myEle");
+        const eles = document.querySelectorAll(".selectme");
         console.log(eles);
         eles.forEach((el) => {
             console.log(el);
@@ -20,3 +20,5 @@
     </script>
 </body>
 </html>
+
+<!-- query selector returns a nodelist of the elements matching the selectors. It's an array -->

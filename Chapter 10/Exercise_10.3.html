@@ -1,15 +1,19 @@
 <!doctype html>
 <html>
 <head>
-    <title>Dynamic event manipulation</title>
+    <title>Get Elements By Tag Name exercise</title>
 </head>
 <body>
-    <div>Hello World 1</div>
-    <div>Hello World 2</div>
-    <div>Hello World 3</div>
+    <p>Hello World 1</p>
+    <p>Hello World 2</p>
+    <p>Hello World 3</p>
     <script>
-        const myEles = document.getElementsByTagName("div");
-        console.log(myEles[1]);
+        const myElements = document.getElementsByTagName("p");
+        console.log(myElements);
     </script>
 </body>
 </html>
+
+<!-- getElementsByTagName makes an array of the returned results, so we could
+ also call an individual item from the array with myElements[] or with
+ .getElementsbyTagName.nameditem() or .getElementsbyTagName.item()-->

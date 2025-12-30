@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Complete JavaScript Course</title>
+    <title>Working with attributes</title>
 </head>
 <body>
     <div id="message"></div>
     <div id="output"></div>
         <script>
             const message = document.querySelector("#message");
-            const myArray = ["Laurence", "Mike", "John", "Larry", "Kim", "Joanne", "Lisa", "Janet", "Jane"];
+            const myArray = ["Ascendant", "Alf", "John", "Larry"];
             build();
             //addClicks();
             function build() {
-                let html = "<h1>My Friends Table</h1><table>";
+                let html = "<h1>Table of My Friends</h1><table>";
                 myArray.forEach((item, index) => {
                     html +=
                         `<tr class="box" data-row="${index+1}" data-name="${item}" onclick="getData(this)"><td>${item}</td>`;
@@ -31,3 +31,7 @@
 
 </body>
 </html>
+
+<!-- <tr> adds table row>. onclick activates getData function
+    message.innerHTML is enabling the message that pops up telling you
+    the row that the name you clicked on is in-->

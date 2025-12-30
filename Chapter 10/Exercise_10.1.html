@@ -1,23 +1,26 @@
-<!doctype html>
-<html><head><title>Sample Webpage</title></head>
-<body>
-    <div class="main">
-        <div>
-            <ul >
-                <li>One</li>
-                <li>Two</li>
-                <li>Three</li>
-            </ul>
-        </div>
-        <div>blue</div>
-        <div>green</div>
-        <div>yellow</div>
-        <div>Purple</div>
-    </div>
-</body>
-</html>
-
-
-console.dir(document)
+<!-- I opened the github page for this chapter for this exercise. 
+ https://github.com/AscendantAlf/JavaScript-from-Beginner-to-Professional/tree/main/Chapter%2010 -->
+<script>
+console.log(document)
 document.body.children
-document.body.children.children
+/* HTMLCollection { 0: div.logged-in.env-production.page-responsive, 1: div#js-global-screen-reader-notice.sr-only.mt-n1, 2: div#js-global-screen-reader-notice-assertive.sr-only.mt-n1, 3: div#screenReaderAnnouncementDiv.sr-only.mt-n1, 4: live-region, 5: live-region-bd88532b-8807-4e19-8f0a-ef3682f11cc0
+, length: 6, … }
+​
+0: <div class="logged-in env-production page-responsive" data-turbo-body="" style="word-wrap: break-word;">​
+1: <div id="js-global-screen-reader-notice" class="sr-only mt-n1" aria-live="polite" aria-atomic="true">​
+2: <div id="js-global-screen-reader-notice-assertive" class="sr-only mt-n1" aria-live="assertive" aria-atomic="true">​
+3: <div id="screenReaderAnnouncementDiv" class="sr-only mt-n1" role="alert" data-testid="screenReaderAnnouncement" aria-live="assertive">​
+4: <live-region>​
+5: <live-region-bd88532b-8807-4e19-8f0a-ef3682f11cc0 aria-live="polite" aria-atomic="true" style="margin-left: -1px; margi… overflow-wrap: normal;">​
+"js-global-screen-reader-notice": <div id="js-global-screen-reader-notice" class="sr-only mt-n1" aria-live="polite" aria-atomic="true">​
+"js-global-screen-reader-notice-assertive": <div id="js-global-screen-reader-notice-assertive" class="sr-only mt-n1" aria-live="assertive" aria-atomic="true">
+​
+length: 6
+​
+screenReaderAnnouncementDiv: <div id="screenReaderAnnouncementDiv" class="sr-only mt-n1" role="alert" data-testid="screenReaderAnnouncement" aria-live="assertive">​
+<prototype>: HTMLCollectionPrototype { item: item(), namedItem: namedItem(), length: Getter, … }
+*/
+document.querySelectorAll("div")
+/* NodeList(576) [ div.logged-in.env-production.page-responsive, div#__primerPortalRoot__, div.position-relative.header-wrapper.js-header-wrapper, div, div.d-none, div.AppHeader-globalBar.pb-2.js-global-bar, div.AppHeader-globalBar-start.responsive-context-region, div, div, div.d-none, … ]
+ 576 ouch....... */
+</script>

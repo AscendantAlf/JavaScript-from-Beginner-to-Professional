@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-    <title>JS Tester</title>
+    <title>onclick handler Exercise</title>
 </head>
 <body>
     <div>
@@ -10,8 +10,12 @@
     </div>
     <script>
         function message(el) {
-            console.dir(el.textContent);
+            console.dir(el.parentElement);
         }
     </script>
 </body>
 </html>
+
+<!-- this refers to the element it's in when it's passed into an argument.
+ I added .parentElement behind el, so clicking the button will log the parent
+ element of this (button), so it logs the entire div structure to the console-->
